@@ -16,7 +16,7 @@
 # Acontinuación instalamos Streamlit 
 # pip install Streamlit
 # pip install streamlit_option_menu
-# pip install streamlit.components.v1
+# pip install streamlit.components.v1 (no instalar)
 
 # Este código sirve para acceder una página web en tu navegador que te brinda información sobre Streamlit.
 # Pero se ejecuta en la terminal Python de tu ordenador.
@@ -41,8 +41,8 @@ import streamlit.components.v1 as components
 # Menú vertical en una barra lateral
 # Crea una barra lateral (sidebar) en la aplicación.
 with st.sidebar:
-    opciones = option_menu(None,['Inicio', 'Experiencia', 'Gráficos'] , 
-        icons=['house-heart-fill','stars', 'ubuntu'], menu_icon=None, default_index=0)
+    opciones = option_menu("Selecciona una sección: ",['Inicio', 'Experiencia', 'Gráficos'] , 
+        icons=['0-circle','1-circle', '2-circle'], menu_icon="Flower1", default_index=0)
     # Crea un menú de opciones dentro de la barra lateral -> option_menu(...)
     # Título que se mostrará encima del menú -> "Selecciona una sección: "
     # Lista de opciones disponibles para navegar -> ['Inicio', 'Experiencia', 'Gráficos']
@@ -54,10 +54,10 @@ with st.sidebar:
 # OJO: Se puede eliminar el título del menú con None
 # Crea un menú de navegación horizontal y guarda la opción seleccionada por el usuario en la variable 'selected'
 #selected = option_menu(
-    #menu_title="Selecciona una sección: ", 
-   # options=['Inicio', 'Experiencia', 'Gráficos'], 
-    #icons=['person-heart', 'globe-americas', 'pencil-square'], 
-   # menu_icon="cast", default_index=0, orientation="horizontal")
+   # menu_title="Selecciona una sección: ", 
+    #options=['Inicio', 'Experiencia', 'Gráficos'], 
+   # icons=['person-heart', 'globe-americas', 'pencil-square'], 
+    #menu_icon="cast", default_index=0, orientation="horizontal")
     # Título que aparece antes de las opciones del menú -> menu_title="Selecciona una sección: "
     # Lista de opciones que estarán disponibles en el menú -> ['Inicio', 'Experiencia', 'Gráficos']
     # Iconos asociados a cada opción del menú -> ['person-heart', 'globe-americas', 'pencil-square']
