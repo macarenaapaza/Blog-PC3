@@ -185,8 +185,6 @@ elif opciones == 'Gráficos':
             </div>
             """,
            )
-            unsafe_allow_html=True
-@@ -192,24 +197,30 @@
 
     elif grafico_seleccionado == 'Mapa_1':
         # Título de la sección
