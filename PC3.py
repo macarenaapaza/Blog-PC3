@@ -102,7 +102,7 @@ if opciones == 'Inicio':
     # f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>"
     # unsafe_allow_html=True permite que Streamlit interprete las etiquetas HTML incluidas en la cadena
 
-elif opciones == 'Experiencia ':
+elif opciones == 'Experiencia':
     st.markdown("<h1 style='text-align: center;'>Mi nuevo descubrimiento 💻</h1>", unsafe_allow_html=True)
 
     # Agregar un  texto para la respuesta
@@ -137,10 +137,14 @@ elif opciones == 'Experiencia ':
             "https://drive.google.com/file/d/14vpeZgm5JuNGzwovOQmzyfVTxssTYNml/view?usp=sharing"
         )
     # Agrega una breve descripción del video.
+    st.markdown(
+        "En este video te enseñare ejemplos y definiciones acerca de la diferencia entre los strings y las listas,
     st.markdown("""
          En este video te enseñare ejemplos y definiciones acerca de la diferencia entre los strings y las listas,
         asi como comprender inmutabilidad vs. mutabilidad, aprender la modificación de datos y ver como convertir cadenas de listas
-        para el análisis de información 
+        para el análisis de información"
+    )
+        para el análisis de información "
     """)
 
     # Formato B
@@ -156,9 +160,9 @@ elif opciones == 'Experiencia ':
     st.markdown("""
         Tranquii, al inicio tambien no tenia idea pero aqui te enseño un poco acerca de sus diferencias, 
         como aprendas a iterar sobre las listas usando (for) y como implementar condiciones de parada dinamica 
-        usando (while). 
-    """)
-
+        usando (while).
+    """) 
+        
 elif opciones == 'Gráficos':
     st.markdown("<h2 style='text-align: center;'>Resultados</h2>", unsafe_allow_html=True)
 
