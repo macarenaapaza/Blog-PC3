@@ -120,7 +120,7 @@ elif opciones == 'Experiencia':
     con la programación para tener analisis mas dinamicos y certeros.
     Sin duda creo que la todo lo aprendido acerca de programación no solo podre usarlo en mi
     vida personal, sino que tambien para ordenar datos, lugares o etc que tenga que exponer acerca
-    de una noticia periodsitica. 
+    de una noticia periodistica. 
     """
 
     # Mostramos el texto
@@ -145,11 +145,13 @@ elif opciones == 'Experiencia':
     # Al hacer clic, el video se abrirá en una nueva pestaña del navegador.
     st.link_button(
             "Ver video",
-            "https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link"
+            "https://drive.google.com/drive/u/5/home"
         )
     # Agrega una breve descripción del video.
     st.caption(
-        "En este video se presenta ...., "
+        "En este video te enseñare ejemplos y definiciones acerca de la diferencia entre los strings y las listas,
+        asi como comprender inmutabilidad vs. mutabilidad, aprender la modificación de datos y ver como convertir cadenas de listas
+        para el análisis de información "
     )
 
 elif opciones == 'Gráficos':
