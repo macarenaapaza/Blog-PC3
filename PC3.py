@@ -174,17 +174,13 @@ elif opciones == 'Gráficos':
         # Interpretación del gráfico
         st.markdown(
             """
-            <div style='text-align: justify; font-size: 20px;'>
-            Aquí debe ir una breve interpretación de tu gráfico.
             El siguiente gráfico es una Nube de Palabras (Word Cloud) generada a partir del primer capítulo del libro de Harry Potter ('El niño que vivió'). 
             Aunque su distribución y su paleta de colores le dan el aspecto de un mapa conceptual, 
             se trata de una visualización de frecuencias de texto. En este formato, el tamaño de cada término es directamente proporcional 
             a la cantidad de veces que se menciona en el relato. 
             Gracias a esto, podemos identificar de un solo vistazo que 
             apellidos como 'Dursley' y 'Potter' son los protagonistas absolutos de este fragmento de la historia.
-            </div>
-            """,
-           )
+           """  )
             # Centrar la imagen utilizando tres columnas
         col3, col4, col5 = st.columns([1, 5, 1])
     
