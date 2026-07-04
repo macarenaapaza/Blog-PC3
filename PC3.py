@@ -167,7 +167,7 @@ elif opciones == 'Gráficos':
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # Mostramos el gráfico seleccionado
-    if grafico_seleccionado == 'Gráfico_1':
+    if grafico_seleccionado == 'Nube de palabras':
         # Título de la sección
         st.subheader("📊 La magia de las palabras: Analizando el inicio de Harry Potter")
 
@@ -195,7 +195,7 @@ elif opciones == 'Gráficos':
                 width=800
             )
 
-    elif grafico_seleccionado == 'Mapa_1':
+    elif grafico_seleccionado == 'Locaciones Interactivas':
         # Título de la sección
         st.subheader("🗺️ Mapa Interactivo: Locaciones de cine")
 
