@@ -164,7 +164,7 @@ elif opciones == 'Gráficos':
 
     graficos = ['Plabras', 'Mapa interactivo']
 
-    grafico_seleccionado = st.selectbox('Palabras', graficos)
+    grafico_seleccionado = st.selectbox('Elige el grafico que deseas ver', graficos)
 
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Palabras':
@@ -185,7 +185,15 @@ elif opciones == 'Gráficos':
             </div>
             """,
            )
-
+            # Centrar la imagen utilizando tres columnas
+            col3, col4, col5 = st.columns([1, 5, 1])
+    
+            with col4:
+                st.image(
+                    "imagen 1.png",
+                    width=800
+                )
+            
     elif grafico_seleccionado == 'Mapa Interactivo':
         # Título de la sección
         st.subheader("🗺️ Mapa Interactivo: Locaciones de cine")
