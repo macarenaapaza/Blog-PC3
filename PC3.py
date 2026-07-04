@@ -172,7 +172,8 @@ elif opciones == 'Gráficos':
         st.subheader("📊 La magia de las palabras: Analizando el inicio de Harry Potter")
 
         # Interpretación del gráfico
-        st.markdown("""
+        st.markdown(
+            """
             <div style='text-align: justify; font-size: 20px;'>
             Aquí debe ir una breve interpretación de tu gráfico.
             El siguiente gráfico es una Nube de Palabras (Word Cloud) generada a partir del primer capítulo del libro de Harry Potter ('El niño que vivió'). 
@@ -183,6 +184,7 @@ elif opciones == 'Gráficos':
             apellidos como 'Dursley' y 'Potter' son los protagonistas absolutos de este fragmento de la historia.
             </div>
             """,
+           )
             unsafe_allow_html=True
 @@ -192,24 +197,30 @@
 
