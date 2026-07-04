@@ -1,7 +1,7 @@
 [theme]
 primaryColor="#4F111A"
-backgroundColor="#0D0F40"
-secondaryBackgroundColor="#FFFFF"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#0D0F40"
 textColor="#2E2E2E"
-font = "Yuyu"
-codeFont = "Yuyu:https://fonts.googleapis.com/css2?family=Yuyu&display=swap" 
+font = "Lato"
+codeFont = "Lato:https://fonts.googleapis.com/css2?family=Lato&display=swap" 
