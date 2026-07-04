@@ -68,7 +68,7 @@ with st.sidebar:
 # Verifica si el usuario ha seleccionado la opción "Inicio" en el menú de navegación horizontal.
 # OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "opciones"
 if opciones == 'Inicio':
-    st.markdown("<h1 style='text-align: center;'>Nombre del blog</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Mi mundo</h1>", unsafe_allow_html=True)
     # Muestra un título principal utilizando HTML -> st.markdown("...", unsafe_allow_html=True)
     # La etiqueta <h1> define un encabezado de nivel 1 -> "<h1 ...>...</h1>"
     # El estilo CSS 'text-align: center' centra el texto -> style='text-align: center;'
@@ -103,7 +103,7 @@ if opciones == 'Inicio':
     # unsafe_allow_html=True permite que Streamlit interprete las etiquetas HTML incluidas en la cadena
 
 elif opciones == 'Experiencia':
-    st.markdown("<h1 style='text-align: center;'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Mi nuevo descubrimiento 💻</h1>", unsafe_allow_html=True)
 
     # Agregar un  texto para la respuesta
     texto_2 = """
@@ -129,10 +129,13 @@ elif opciones == 'Experiencia':
     # Formato A
     # Agregamos todo los videos realizados en las prácticas anteriores
     # Muestra un subtítulo para identificar el contenido del video
-    st.subheader("🎥 Video 1 - YouTube")
+    st.subheader("🎥 Aprendamos juntos")
     # Inserta un video de YouTube directamente en la aplicación.
     # El usuario puede reproducirlo sin salir de Streamlit.
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
+    st.link_button(
+            "Ver video",
+            "https://drive.google.com/file/d/14vpeZgm5JuNGzwovOQmzyfVTxssTYNml/view?usp=sharing"
+        )
     # Agrega una breve descripción del video.
     st.caption(
         "En este video se presenta ...., "
@@ -145,7 +148,7 @@ elif opciones == 'Experiencia':
     # Al hacer clic, el video se abrirá en una nueva pestaña del navegador.
     st.link_button(
             "Ver video",
-            "https://drive.google.com/drive/u/5/home"
+            "https://drive.google.com/file/d/1yPv9XYkR0A5uquRnbZbNubbzKbev-quS/view?usp=sharing"
         )
     # Agrega una breve descripción del video.
     st.markdown("""
@@ -157,7 +160,7 @@ elif opciones == 'Experiencia':
 elif opciones == 'Gráficos':
     st.markdown("<h2 style='text-align: center;'>Nombre a la sección 'Gráficos'</h2>", unsafe_allow_html=True)
 
-    graficos = ['Gráfico_1', 'Gráfico_2', 'Mapa_1']
+    graficos = ['Gráfico_1', 'Mapa_1']
 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
@@ -181,32 +184,10 @@ elif opciones == 'Gráficos':
 
         with col4:
             st.image(
-                "aisladas_base_datos.png",
+                "imagen 1.png",
                 width=800
             )
 
-    elif grafico_seleccionado == 'Gráfico_2':
-        # Título de la sección
-        st.subheader("📊 Gráfico 2: Familias lingüísticas")
-
-        # Interpretación del gráfico
-        st.markdown(
-            """
-            <div style='text-align: justify; font-size: 18px;'>
-            Aquí debe ir una breve interpretación del gráfico.
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-        # Centrar la imagen
-        col6, col7, col8 = st.columns([1, 5, 1])
-
-        with col7:
-            st.image(
-                "lengua_familia_GB.png",
-                width=800
-            )
     elif grafico_seleccionado == 'Mapa_1':
         # Título de la sección
         st.subheader("🗺️ Mapa 1: Distribución geográfica")
