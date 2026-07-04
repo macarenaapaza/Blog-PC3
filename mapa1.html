@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_632323a69695190cec55a7ce03e85731 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_632323a69695190cec55a7ce03e85731" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_632323a69695190cec55a7ce03e85731 = L.map(
+                "map_632323a69695190cec55a7ce03e85731",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_23f56115963b251e86f18b2227bcee0f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_23f56115963b251e86f18b2227bcee0f.addTo(map_632323a69695190cec55a7ce03e85731);
+        
+    
+            var marker_7c6daf685cdb59e440d678d9d4e04c69 = L.marker(
+                [-37.8721, 175.6829],
+                {
+}
+            ).addTo(map_632323a69695190cec55a7ce03e85731);
+        
+    
+            var icon_e7306e902e65c72f5b1e07ec0580e351 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_209f6889ac15e01b9eeac0549708a0fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ab9f33614a44af9cc2360a8eaf64499 = $(`<div id="html_5ab9f33614a44af9cc2360a8eaf64499" style="width: 100.0%; height: 100.0%;">     <strong>Película/Serie:</strong> El Señor de los Anillos: La Comunidad del Anillo<br>     <strong>Director:</strong> Peter Jackson<br>     <strong>Año:</strong> 2001<br>     <strong>Género:</strong> Fantasía / Aventura<br>     <strong>Latitud:</strong> -37.8721<br>     <strong>Longitud:</strong> 175.6829     </div>`)[0];
+                popup_209f6889ac15e01b9eeac0549708a0fa.setContent(html_5ab9f33614a44af9cc2360a8eaf64499);
+            
+        
+
+        marker_7c6daf685cdb59e440d678d9d4e04c69.bindPopup(popup_209f6889ac15e01b9eeac0549708a0fa)
+        ;
+
+        
+    
+    
+            marker_7c6daf685cdb59e440d678d9d4e04c69.bindTooltip(
+                `<div>
+                     El Señor de los Anillos: La Comunidad del Anillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c6daf685cdb59e440d678d9d4e04c69.setIcon(icon_e7306e902e65c72f5b1e07ec0580e351);
+            
+    
+            var marker_e65ed7ed137b7d5cf390b2ceb1c2f969 = L.marker(
+                [42.6403, 18.1083],
+                {
+}
+            ).addTo(map_632323a69695190cec55a7ce03e85731);
+        
+    
+            var icon_32a911d88d475470782f01280e326e59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c88b7d363b31c5d19184dbc5328c7bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_006ffc6f5c300448bee48ccf04bf1c06 = $(`<div id="html_006ffc6f5c300448bee48ccf04bf1c06" style="width: 100.0%; height: 100.0%;">     <strong>Película/Serie:</strong> Game of Thrones<br>     <strong>Director:</strong> David Benioff & D.B. Weiss<br>     <strong>Año:</strong> 2011<br>     <strong>Género:</strong> Drama / Fantasía medieval<br>     <strong>Latitud:</strong> 42.6403<br>     <strong>Longitud:</strong> 18.1083     </div>`)[0];
+                popup_1c88b7d363b31c5d19184dbc5328c7bd.setContent(html_006ffc6f5c300448bee48ccf04bf1c06);
+            
+        
+
+        marker_e65ed7ed137b7d5cf390b2ceb1c2f969.bindPopup(popup_1c88b7d363b31c5d19184dbc5328c7bd)
+        ;
+
+        
+    
+    
+            marker_e65ed7ed137b7d5cf390b2ceb1c2f969.bindTooltip(
+                `<div>
+                     Game of Thrones
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e65ed7ed137b7d5cf390b2ceb1c2f969.setIcon(icon_32a911d88d475470782f01280e326e59);
+            
+    
+            var marker_d382cdddec782faaa355c98d4efa2655 = L.marker(
+                [35.0844, -106.6504],
+                {
+}
+            ).addTo(map_632323a69695190cec55a7ce03e85731);
+        
+    
+            var icon_67268e842836288da586f7c39edd8b46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75dd7a89c2e130f6d629c2172586d438 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2df12719334d1ac038f50ff1a75c58a = $(`<div id="html_d2df12719334d1ac038f50ff1a75c58a" style="width: 100.0%; height: 100.0%;">     <strong>Película/Serie:</strong> Breaking Bad<br>     <strong>Director:</strong> Vince Gilligan<br>     <strong>Año:</strong> 2008<br>     <strong>Género:</strong> Crimen / Drama<br>     <strong>Latitud:</strong> 35.0844<br>     <strong>Longitud:</strong> -106.6504     </div>`)[0];
+                popup_75dd7a89c2e130f6d629c2172586d438.setContent(html_d2df12719334d1ac038f50ff1a75c58a);
+            
+        
+
+        marker_d382cdddec782faaa355c98d4efa2655.bindPopup(popup_75dd7a89c2e130f6d629c2172586d438)
+        ;
+
+        
+    
+    
+            marker_d382cdddec782faaa355c98d4efa2655.bindTooltip(
+                `<div>
+                     Breaking Bad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d382cdddec782faaa355c98d4efa2655.setIcon(icon_67268e842836288da586f7c39edd8b46);
+            
+    
+            var marker_73055e9da298af5703da8a011c29a1ea = L.marker(
+                [55.4158, -1.7061],
+                {
+}
+            ).addTo(map_632323a69695190cec55a7ce03e85731);
+        
+    
+            var icon_74dfe9491f621cf353b2865d1184a62d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d38652dd753a8df11b3ebed91bb9b887 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2833845b7e781a9952cd857a1a16d1d1 = $(`<div id="html_2833845b7e781a9952cd857a1a16d1d1" style="width: 100.0%; height: 100.0%;">     <strong>Película/Serie:</strong> Harry Potter y la Piedra Filosofal<br>     <strong>Director:</strong> Chris Columbus<br>     <strong>Año:</strong> 2001<br>     <strong>Género:</strong> Magia / Fantasía<br>     <strong>Latitud:</strong> 55.4158<br>     <strong>Longitud:</strong> -1.7061     </div>`)[0];
+                popup_d38652dd753a8df11b3ebed91bb9b887.setContent(html_2833845b7e781a9952cd857a1a16d1d1);
+            
+        
+
+        marker_73055e9da298af5703da8a011c29a1ea.bindPopup(popup_d38652dd753a8df11b3ebed91bb9b887)
+        ;
+
+        
+    
+    
+            marker_73055e9da298af5703da8a011c29a1ea.bindTooltip(
+                `<div>
+                     Harry Potter y la Piedra Filosofal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_73055e9da298af5703da8a011c29a1ea.setIcon(icon_74dfe9491f621cf353b2865d1184a62d);
+            
+    
+            var marker_3f5279945761366e97912cb1b33cee8e = L.marker(
+                [48.8556, 2.2886],
+                {
+}
+            ).addTo(map_632323a69695190cec55a7ce03e85731);
+        
+    
+            var icon_f1e3f4a965291a06eb2a44ef08a8c294 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a640f5636623fa72a0c279c2082358ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_338ddcd6083e483b61a55e12a995c458 = $(`<div id="html_338ddcd6083e483b61a55e12a995c458" style="width: 100.0%; height: 100.0%;">     <strong>Película/Serie:</strong> Inception (El Origen)<br>     <strong>Director:</strong> Christopher Nolan<br>     <strong>Año:</strong> 2010<br>     <strong>Género:</strong> Ciencia Ficción / Acción<br>     <strong>Latitud:</strong> 48.8556<br>     <strong>Longitud:</strong> 2.2886     </div>`)[0];
+                popup_a640f5636623fa72a0c279c2082358ed.setContent(html_338ddcd6083e483b61a55e12a995c458);
+            
+        
+
+        marker_3f5279945761366e97912cb1b33cee8e.bindPopup(popup_a640f5636623fa72a0c279c2082358ed)
+        ;
+
+        
+    
+    
+            marker_3f5279945761366e97912cb1b33cee8e.bindTooltip(
+                `<div>
+                     Inception (El Origen)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f5279945761366e97912cb1b33cee8e.setIcon(icon_f1e3f4a965291a06eb2a44ef08a8c294);
+            
+    
+            tile_layer_23f56115963b251e86f18b2227bcee0f.addTo(map_632323a69695190cec55a7ce03e85731);
+        
+    
+                marker_7c6daf685cdb59e440d678d9d4e04c69.setIcon(icon_e7306e902e65c72f5b1e07ec0580e351);
+            
+    
+                marker_e65ed7ed137b7d5cf390b2ceb1c2f969.setIcon(icon_32a911d88d475470782f01280e326e59);
+            
+    
+                marker_d382cdddec782faaa355c98d4efa2655.setIcon(icon_67268e842836288da586f7c39edd8b46);
+            
+    
+                marker_73055e9da298af5703da8a011c29a1ea.setIcon(icon_74dfe9491f621cf353b2865d1184a62d);
+            
+    
+                marker_3f5279945761366e97912cb1b33cee8e.setIcon(icon_f1e3f4a965291a06eb2a44ef08a8c294);
+            
+</script>
+</html>
