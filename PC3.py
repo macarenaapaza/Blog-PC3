@@ -157,7 +157,7 @@ elif opciones == 'Experiencia ':
         Tranquii, al inicio tambien no tenia idea pero aqui te enseño un poco acerca de sus diferencias, 
         como aprendas a iterar sobre las listas usando (for) y como implementar condiciones de parada dinamica 
         usando (while). 
-    """) 
+    """)
 
 elif opciones == 'Gráficos':
     st.markdown("<h2 style='text-align: center;'>Resultados</h2>", unsafe_allow_html=True)
