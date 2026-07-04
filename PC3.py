@@ -162,12 +162,12 @@ elif opciones == 'Experiencia':
 elif opciones == 'Gráficos':
     st.markdown("<h2 style='text-align: center;'>Resultados</h2>", unsafe_allow_html=True)
 
-    graficos = ['Gráfico_1', 'Mapa_1']
+    graficos = ['Plabras', 'Mapa interactivo']
 
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
 
     # Mostramos el gráfico seleccionado
-    if grafico_seleccionado == 'Nube de palabras':
+    if grafico_seleccionado == 'Gráfico_1':
         # Título de la sección
         st.subheader("📊 La magia de las palabras: Analizando el inicio de Harry Potter")
 
@@ -175,6 +175,7 @@ elif opciones == 'Gráficos':
         st.markdown(
             """
             <div style='text-align: justify; font-size: 20px;'>
+            Aquí debe ir una breve interpretación de tu gráfico.
             El siguiente gráfico es una Nube de Palabras (Word Cloud) generada a partir del primer capítulo del libro de Harry Potter ('El niño que vivió'). 
             Aunque su distribución y su paleta de colores le dan el aspecto de un mapa conceptual, 
             se trata de una visualización de frecuencias de texto. En este formato, el tamaño de cada término es directamente proporcional 
@@ -184,18 +185,9 @@ elif opciones == 'Gráficos':
             </div>
             """,
             unsafe_allow_html=True
-        )
+@@ -192,24 +197,30 @@
 
-        # Centrar la imagen utilizando tres columnas
-        col3, col4, col5 = st.columns([1, 5, 1])
-
-        with col4:
-            st.image(
-                "imagen 1.png",
-                width=800
-            )
-
-    elif grafico_seleccionado == 'Locaciones Interactivas':
+    elif grafico_seleccionado == 'Mapa_1':
         # Título de la sección
         st.subheader("🗺️ Mapa Interactivo: Locaciones de cine")
 
@@ -203,6 +195,7 @@ elif opciones == 'Gráficos':
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
+            Aquí debe ir una breve interpretación del mapa.
             La siguiente visualización es un mapa interactivo generado con Python y la librería Folium. 
             Su objetivo es ubicar geográficamente las locaciones de grabación reales de un 'Top 5' de series y películas favoritas. 
             Para lograr esto, se construyó un diccionario de datos que incluye las coordenadas precisas (latitud y longitud) de cada lugar.
