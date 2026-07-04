@@ -85,7 +85,6 @@ if opciones == 'Inicio':
 
     # Define una cadena de texto multilínea que contiene una guía para redactar una presentación personal.
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
     Hola!! Bienvenido a mi blog, como puedes ver me llamo macarena 
     pero amo cuando me dicen maca o maquita. 
     Soy una estudiente de periodismo, con mucha curiosidad por el mundo
@@ -94,7 +93,7 @@ if opciones == 'Inicio':
     que me da para descubrir, probar e intentar muchas cosas.
     En el futuro me gustaria viajar mucho y tomar fotos de muchas coss
     En mi tiempo libre disfruto estar con mis amigos o familia, jugar
-    con mi perrito (chimmy <3), o leer un libro
+    con mi perrito (chimmy <3), o ultimamente disfruto leer un libro. 
     """
 
     # Muestra el texto en la segunda columna utilizando HTML
@@ -108,12 +107,20 @@ elif opciones == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?, 
-    ¿Qué te ha enseñado la programación?, 
-    ¿Qué te gusta de programar?, 
-    ¿Qué te gustaría hacer con la programación en el futuro?
-    ¿Cómo se relaciona lo que haz aprendido con tu carrera?
+    La verdad que nunca habia escuchado acera de python o 
+    los pograma que se usan para programar, asi que al inicio
+    me senti mas perdida que nunca, aun que no puedo negar que
+    me parecia super novedoso todo. La programación me ha enseñado
+    que realmente se puede hacer MUCHO y para cada ocasión, aparte 
+    que lo puedes usar como una herramienta a tu favor para organizarte,
+    apoyarte, etc. Por ejemplo, lo que me gusta de programar es que en base
+    a lo que voy a crear puedo personalizarlo segun mis colores favoritos, mis fonts,
+    etc, ya que hay muchas librerias que me lo permiten.
+    En el futuro, creo que me gustaria combinar mis trabajos de investigación periodistica 
+    con la programación para tener analisis mas dinamicos y certeros.
+    Sin duda creo que la todo lo aprendido acerca de programación no solo podre usarlo en mi
+    vida personal, sino que tambien para ordenar datos, lugares o etc que tenga que exponer acerca
+    de una noticia periodsitica. 
     """
 
     # Mostramos el texto
