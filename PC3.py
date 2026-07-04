@@ -129,7 +129,7 @@ elif opciones == 'Experiencia':
     # Formato A
     # Agregamos todo los videos realizados en las prácticas anteriores
     # Muestra un subtítulo para identificar el contenido del video
-    st.subheader("🎥 Aprendamos juntos")
+    st.subheader("🎥 Sabes que es un string? o una lista? 🧐")
     # Inserta un video de YouTube directamente en la aplicación.
     # El usuario puede reproducirlo sin salir de Streamlit.
     st.link_button(
@@ -138,12 +138,14 @@ elif opciones == 'Experiencia':
         )
     # Agrega una breve descripción del video.
     st.caption(
-        "En este video se presenta ...., "
+        "En este video te enseñare ejemplos y definiciones acerca de la diferencia entre los strings y las listas,
+        asi como comprender inmutabilidad vs. mutabilidad, aprender la modificación de datos y ver como convertir cadenas de listas
+        para el análisis de información"
     )
 
     # Formato B
     # Muestra un subtítulo para identificar el contenido del video
-    st.subheader("🎥 Video 1 - Google Drive")
+    st.subheader("Bucles for and while? que es eso?!🤯")
     # Crea un botón que redirige al usuario a un video alojado en Google Drive. 
     # Al hacer clic, el video se abrirá en una nueva pestaña del navegador.
     st.link_button(
@@ -152,9 +154,9 @@ elif opciones == 'Experiencia':
         )
     # Agrega una breve descripción del video.
     st.markdown("""
-        En este video te enseñare ejemplos y definiciones acerca de la diferencia entre los strings y las listas,
-        asi como comprender inmutabilidad vs. mutabilidad, aprender la modificación de datos y ver como convertir cadenas de listas
-        para el análisis de información 
+        Tranquii, al inicio tambien no tenia idea pero aqui te enseño un poco acerca de sus diferencias, 
+        como aprendas a iterar sobre las listas usando (for) y como implementar condiciones de parada dinamica 
+        usando (while).
     """) 
 
 elif opciones == 'Gráficos':
