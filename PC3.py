@@ -78,7 +78,7 @@ if opciones == 'Inicio':
     col1, col2 = st.columns(2)
 
     # Muestra una imagen en la primera columna
-    col1.image("fotomaca.jpeg", caption='Ellie', width=300)
+    col1.image("fotomaca.jpeg", caption='Maca', width=300)
     # "ellie.png" es el archivo de imagen que se visualizará -> Aquí debes reemplazar por tu foto de perfil
     # El texto "Ellie" aparecerá como descripción de la imagen
     # width=300 establece el ancho de la imagen en 300 píxeles
@@ -86,12 +86,15 @@ if opciones == 'Inicio':
     # Define una cadena de texto multilínea que contiene una guía para redactar una presentación personal.
     texto = """
     Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres?, 
-    ¿De dónde eres?, 
-    ¿Qué estudias?, 
-    ¿Qué te gusta de tu carrera?, 
-    ¿Qué te gustaría hacer en el futuro?, 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Hola!! Bienvenido a mi blog, como puedes ver me llamo macarena 
+    pero amo cuando me dicen maca o maquita. 
+    Soy una estudiente de periodismo, con mucha curiosidad por el mundo
+    Soy Peruana y Limeña aunque por mi familia tengo raices arequipeñas.
+    Si me preguntaran ¿Qué te gusta de tu carrera?, creo que diria la libertad
+    que me da para descubrir, probar e intentar muchas cosas.
+    En el futuro me gustaria viajar mucho y tomar fotos de muchas coss
+    En mi tiempo libre disfruto estar con mis amigos o familia, jugar
+    con mi perrito (chimmy <3), o leer un libro
     """
 
     # Muestra el texto en la segunda columna utilizando HTML
