@@ -137,7 +137,7 @@ elif opciones == 'Experiencia':
             "https://drive.google.com/file/d/14vpeZgm5JuNGzwovOQmzyfVTxssTYNml/view?usp=sharing"
         )
     # Agrega una breve descripción del video.
-    st.caption(
+    st.markdown(
         "En este video te enseñare ejemplos y definiciones acerca de la diferencia entre los strings y las listas,
         asi como comprender inmutabilidad vs. mutabilidad, aprender la modificación de datos y ver como convertir cadenas de listas
         para el análisis de información"
