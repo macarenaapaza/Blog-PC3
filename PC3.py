@@ -169,13 +169,18 @@ elif opciones == 'Gráficos':
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico_1':
         # Título de la sección
-        st.subheader("📊 Gráfico 1: Lenguas aisladas")
+        st.subheader("📊 La magia de las palabras: Analizando el inicio de Harry Potter")
 
         # Interpretación del gráfico
         st.markdown(
             """
             <div style='text-align: justify; font-size: 20px;'>
-            Aquí debe ir una breve interpretación de tu gráfico.
+            El siguiente gráfico es una Nube de Palabras (Word Cloud) generada a partir del primer capítulo del libro de Harry Potter ('El niño que vivió'). 
+            Aunque su distribución y su paleta de colores le dan el aspecto de un mapa conceptual, 
+            se trata de una visualización de frecuencias de texto. En este formato, el tamaño de cada término es directamente proporcional 
+            a la cantidad de veces que se menciona en el relato. 
+            Gracias a esto, podemos identificar de un solo vistazo que 
+            apellidos como 'Dursley' y 'Potter' son los protagonistas absolutos de este fragmento de la historia.
             </div>
             """,
             unsafe_allow_html=True
@@ -192,13 +197,19 @@ elif opciones == 'Gráficos':
 
     elif grafico_seleccionado == 'Mapa_1':
         # Título de la sección
-        st.subheader("🗺️ Mapa 1: Distribución geográfica")
+        st.subheader("🗺️ Mapa Interactivo: Locaciones de cine")
 
         # Interpretación del mapa
         st.markdown(
             """
             <div style='text-align: justify; font-size: 18px;'>
-            Aquí debe ir una breve interpretación del mapa.
+            La siguiente visualización es un mapa interactivo generado con Python y la librería Folium. 
+            Su objetivo es ubicar geográficamente las locaciones de grabación reales de un 'Top 5' de series y películas favoritas. 
+            Para lograr esto, se construyó un diccionario de datos que incluye las coordenadas precisas (latitud y longitud) de cada lugar.
+            En el mapa, cada locación está representada por un marcador rojo con un ícono de cinta de película. 
+            Al interactuar con estos pines, se despliega una ventana emergente que muestra información detallada de la obra, 
+            como su nombre, director, año de estreno, género y sus coordenadas exactas. Entre los títulos destacados en este mapa 
+            se encuentran grandes éxitos como El Señor de los Anillos, Game of Thrones, Breaking Bad, Harry Potter e Inceptio
             </div>
             """,
             unsafe_allow_html=True
