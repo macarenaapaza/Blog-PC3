@@ -148,11 +148,11 @@ elif opciones == 'Experiencia':
             "https://drive.google.com/drive/u/5/home"
         )
     # Agrega una breve descripción del video.
-    st.caption(
-        "En este video te enseñare ejemplos y definiciones acerca de la diferencia entre los strings y las listas,
+    st.markdown("""
+        En este video te enseñare ejemplos y definiciones acerca de la diferencia entre los strings y las listas,
         asi como comprender inmutabilidad vs. mutabilidad, aprender la modificación de datos y ver como convertir cadenas de listas
-        para el análisis de información "
-    )
+        para el análisis de información 
+    """) 
 
 elif opciones == 'Gráficos':
     st.markdown("<h2 style='text-align: center;'>Nombre a la sección 'Gráficos'</h2>", unsafe_allow_html=True)
